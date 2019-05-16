@@ -1,0 +1,161 @@
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\MainWindow.baml
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\App.baml
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\App.g.cs
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\bin\Release\Kalkulator Zapremine.exe
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\bin\Release\Kalkulator Zapremine.pdb
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+E:\Programi\visual studio projekti\InfoReaderV2\bin\Release\Kalkulator Zapremine.exe
+E:\Programi\visual studio projekti\InfoReaderV2\bin\Release\Kalkulator Zapremine.pdb
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\MainWindow.baml
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\App.baml
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\App.g.cs
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+E:\Programi\visual studio projekti\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\bin\Release\Kalkulator Zapremine.exe
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\bin\Release\Kalkulator Zapremine.pdb
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\MainWindow.baml
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\App.baml
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\App.g.cs
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+E:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\bin\Release\Kalkulator Zapremine.exe
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\bin\Release\Kalkulator Zapremine.pdb
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\MainWindow.baml
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\App.baml
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\App.g.cs
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+F:\Programi\visual studio projekti\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\bašaid\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\bašaid\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\MainWindow.baml
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\App.baml
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\App.g.cs
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\KalkulatorZapremine\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\bogojevo\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\bogojevo\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\MainWindow.baml
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\App.baml
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\App.g.cs
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\Bogojevo\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\čenta\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\čenta\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\MainWindow.baml
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\App.baml
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\App.g.cs
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\Kalkulator\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.Cache
+C:\Users\OGI-PC\Desktop\GotoviProgrami\RA3\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\RA3\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\doljevac\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\doljevac\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\gospođinci\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\gospođinci\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\horgoš\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\horgoš\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\hrtkovci\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\hrtkovci\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\kanjiža\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\kanjiža\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\kg\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\kg\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\preljina\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\preljina\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\ruma\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\ruma\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\rumenka1\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\rumenka1\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\stopanja\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\stopanja\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\vojka\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\vojka\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\zrenjanin\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\zrenjanin\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\b.gradiste\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\b.gradiste\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\gorjani\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\gorjani\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\GotoviProgrami\zrenjanin\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\GotoviProgrami\zrenjanin\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\MainWindow.baml
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\App.baml
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\App.g.cs
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.cache
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.CoreCompileInputs.cache
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.TrustInfo.xml
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\GotoviProgrami\RA1\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\GotoviProgrami\RA1\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\GotoviProgrami\RA1\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\GotoviProgrami\RA1\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\git-version-folder\GotoviProgrami\RA1\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\git-version-folder\GotoviProgrami\RA1\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\git-version-folder\GotoviProgrami\RA1\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\git-version-folder\GotoviProgrami\RA1\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csprojAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\MainWindow.baml
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\App.baml
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\App.g.cs
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.g.resources
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\InfoReaderV2.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.GenerateResource.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\KalkulatorDizajn.csproj.CoreCompileInputs.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.TrustInfo.xml
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Release\Kalkulator Zapremine.pdb

@@ -1,0 +1,57 @@
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\MainWindow.baml
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\MainWindow.g.cs
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\App.g.cs
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2_MarkupCompile.cache
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.g.resources
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.Properties.Resources.resources
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\bin\Debug\InfoReaderV2.exe
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\bin\Debug\InfoReaderV2.pdb
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.exe
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.pdb
+C:\Data\Writing\Lynda\VS2010\Exercises\09 Testing\03\InfoReader\InfoReaderV2\obj\x86\Debug\App.baml
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\bin\Debug\InfoReaderV2.exe
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\bin\Debug\InfoReaderV2.pdb
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\MainWindow.baml
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\App.baml
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\MainWindow.g.cs
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\App.g.cs
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2_MarkupCompile.cache
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.g.resources
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.Properties.Resources.resources
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.exe
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.pdb
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\InfoReaderV2.exe
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\InfoReaderV2.pdb
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\bin\Debug\InfoReaderV2.exe
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\bin\Debug\InfoReaderV2.pdb
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\MainWindow.baml
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\App.baml
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\MainWindow.g.cs
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\App.g.cs
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\InfoReaderV2_MarkupCompile.cache
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\InfoReaderV2.g.resources
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\InfoReaderV2.Properties.Resources.resources
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Data\Writing\Lynda\VS2010\Exercises\03 Building Project\02\Start\InfoReaderV2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Walt Ritscher\Desktop\Exercise Files\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.exe
+C:\Users\Walt Ritscher\Desktop\Exercise Files\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.pdb
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\bin\Debug\InfoReaderV2.exe
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\bin\Debug\InfoReaderV2.pdb
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.csprojResolveAssemblyReference.cache
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\MainWindow.baml
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\App.baml
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\MainWindow.g.cs
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\App.g.cs
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2_MarkupCompile.cache
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.g.resources
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.Properties.Resources.resources
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.csproj.GenerateResource.Cache
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.exe
+D:\PROGRAMIRANJE\Aktivni tutoriali C#\3 I.D.E\Lynda.com - Visual Studio 2010 Essential Training\New folder\03\02\InfoReader\InfoReaderV2\obj\x86\Debug\InfoReaderV2.pdb
