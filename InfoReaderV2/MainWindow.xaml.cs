@@ -106,29 +106,29 @@ namespace InfoReaderV2
                 case Der.bmb95:
                               
                                   
-                        CalculatorZapremine(txtInBmb95, Derivati.litBmb95, outBmb95);
+                        CalculatorZapremine(txtInBmb95, Derivat.litBmb95, outBmb95);
          
                     break;
                 case Der.bmb95R2:
-                    CalculatorZapremine(txtInBmb95R2, Derivati.litBmb95R2, outBmb95R2);
+                    CalculatorZapremine(txtInBmb95R2, Derivat.litBmb95R2, outBmb95R2);
                     break;
                 case Der.bmb98:
-                    CalculatorZapremine(txtInBmb98, Derivati.litBmb98, outBmb98);
+                    CalculatorZapremine(txtInBmb98, Derivat.litBmb98, outBmb98);
                     break;
                 case Der.eud:
-                    CalculatorZapremine(txtInDizel, Derivati.dizel, outDizel);
+                    CalculatorZapremine(txtInDizel, Derivat.dizel, outDizel);
                     break;
                 case Der.eud1:
-                    CalculatorZapremine(txtInDizel1, Derivati.dizelR2, outDizel1);
+                    CalculatorZapremine(txtInDizel1, Derivat.dizelR2, outDizel1);
                     break;
                 case Der.eud2:
-                    CalculatorZapremine(txtInDizel2, Derivati.dizelR3, outDizel2);
+                    CalculatorZapremine(txtInDizel2, Derivat.dizelR3, outDizel2);
                     break;
                 case Der.eudGold:
-                    CalculatorZapremine(txtInGold, Derivati.eudGold, outGold);
+                    CalculatorZapremine(txtInGold, Derivat.eudGold, outGold);
                     break;
                 case Der.gasnoUlje:
-                    CalculatorZapremine(txtInGasnoUlje, Derivati.gasnoUlje, outGasnoUlje);
+                    CalculatorZapremine(txtInGasnoUlje, Derivat.gasnoUlje, outGasnoUlje);
                     break;
 
             }
@@ -359,8 +359,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prBmb98.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.litBmb98[index + 1] - Derivati.litBmb98[index]);
-                        double test2 = test / 10 * decimall + Derivati.litBmb98[index];
+                        double test = (Derivat.litBmb98[index + 1] - Derivat.litBmb98[index]);
+                        double test2 = test / 10 * decimall + Derivat.litBmb98[index];
                         prBmb98out.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -374,7 +374,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prBmb98.Text);
                     try
                     {
-                        prBmb98out.Text = Derivati.litBmb98[i].ToString();
+                        prBmb98out.Text = Derivat.litBmb98[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -403,7 +403,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefBmb98.Text = Derivati.korekcijaBmb(tempBmb98.Text).ToString();
+                    koefBmb98.Text = Derivat.korekcijaBmb(tempBmb98.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -426,7 +426,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipka.Text = Derivati.litToNiv(Derivati.litBmb98, prBmb98out.Text, litSipka.Text) + "(cm)".ToString();
+                sipka.Text = Derivat.litToNiv(Derivat.litBmb98, prBmb98out.Text, litSipka.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -466,8 +466,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prBmb95.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.litBmb95[index + 1] - Derivati.litBmb95[index]);
-                        double test2 = test / 10 * decimall + Derivati.litBmb95[index];
+                        double test = (Derivat.litBmb95[index + 1] - Derivat.litBmb95[index]);
+                        double test2 = test / 10 * decimall + Derivat.litBmb95[index];
                         prBmb95out.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -481,7 +481,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prBmb95.Text);
                     try
                     {
-                        prBmb95out.Text = Derivati.litBmb95[i].ToString();
+                        prBmb95out.Text = Derivat.litBmb95[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -490,7 +490,7 @@ namespace InfoReaderV2
 
                 }
 
-                CalculatorZapremine(prBmb95, Derivati.litBmb95, prBmb95out);
+                CalculatorZapremine(prBmb95, Derivat.litBmb95, prBmb95out);
                 //double max = Double.Parse(max95.Text);
                 //double d = max - double.Parse(prBmb95out.Text);
                 //raspolozivoBmb95.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
@@ -512,7 +512,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefBmb95.Text = Derivati.korekcijaBmb(tempBmb95.Text).ToString();
+                    koefBmb95.Text = Derivat.korekcijaBmb(tempBmb95.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -535,7 +535,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaBmb95.Text = Derivati.litToNiv(Derivati.litBmb95, prBmb95out.Text, litSipkaBmb95.Text) + "(cm)".ToString();
+                sipkaBmb95.Text = Derivat.litToNiv(Derivat.litBmb95, prBmb95out.Text, litSipkaBmb95.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -576,8 +576,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prBmb95R2.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.litBmb95R2[index + 1] - Derivati.litBmb95R2[index]);
-                        double test2 = test / 10 * decimall + Derivati.litBmb95R2[index];
+                        double test = (Derivat.litBmb95R2[index + 1] - Derivat.litBmb95R2[index]);
+                        double test2 = test / 10 * decimall + Derivat.litBmb95R2[index];
                         prBmb95outR2.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -591,7 +591,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prBmb95R2.Text);
                     try
                     {
-                        prBmb95outR2.Text = Derivati.litBmb95R2[i].ToString();
+                        prBmb95outR2.Text = Derivat.litBmb95R2[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -622,7 +622,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefBmb95R2.Text = Derivati.korekcijaBmb(tempBmb95R2.Text).ToString();
+                    koefBmb95R2.Text = Derivat.korekcijaBmb(tempBmb95R2.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -646,7 +646,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaBmb95R2.Text = Derivati.litToNiv(Derivati.litBmb95R2, prBmb95outR2.Text, litSipkaBmb95R2.Text) + "(cm)".ToString();
+                sipkaBmb95R2.Text = Derivat.litToNiv(Derivat.litBmb95R2, prBmb95outR2.Text, litSipkaBmb95R2.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -692,8 +692,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prEud.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.dizel[index + 1] - Derivati.dizel[index]);
-                        double test2 = test / 10 * decimall + Derivati.dizel[index];
+                        double test = (Derivat.dizel[index + 1] - Derivat.dizel[index]);
+                        double test2 = test / 10 * decimall + Derivat.dizel[index];
                         prEudOut.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -707,7 +707,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prEud.Text);
                     try
                     {
-                        prEudOut.Text = Derivati.dizel[i].ToString();
+                        prEudOut.Text = Derivat.dizel[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -740,7 +740,7 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefEud.Text = Derivati.korekcijaEud(tempEud.Text).ToString();
+                    koefEud.Text = Derivat.korekcijaEud(tempEud.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -762,7 +762,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaEud.Text = Derivati.litToNiv(Derivati.dizel, prEudOut.Text, litSipkaEud.Text) + "(cm)".ToString();
+                sipkaEud.Text = Derivat.litToNiv(Derivat.dizel, prEudOut.Text, litSipkaEud.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -806,8 +806,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prEud1.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.dizelR2[index + 1] - Derivati.dizelR2[index]);
-                        double test2 = test / 10 * decimall + Derivati.dizelR2[index];
+                        double test = (Derivat.dizelR2[index + 1] - Derivat.dizelR2[index]);
+                        double test2 = test / 10 * decimall + Derivat.dizelR2[index];
                         prEudOut1.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -821,7 +821,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prEud1.Text);
                     try
                     {
-                        prEudOut1.Text = Derivati.dizelR2[i].ToString();
+                        prEudOut1.Text = Derivat.dizelR2[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -859,7 +859,7 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefEud1.Text = Derivati.korekcijaEud(tempEud1.Text).ToString();
+                    koefEud1.Text = Derivat.korekcijaEud(tempEud1.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -892,7 +892,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaEud1.Text = Derivati.litToNiv(Derivati.dizelR2, prEudOut1.Text, litSipkaEud1.Text) + "(cm)".ToString();
+                sipkaEud1.Text = Derivat.litToNiv(Derivat.dizelR2, prEudOut1.Text, litSipkaEud1.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -925,8 +925,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prEud2.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.dizelR3[index + 1] - Derivati.dizelR3[index]);
-                        double test2 = test / 10 * decimall + Derivati.dizelR3[index];
+                        double test = (Derivat.dizelR3[index + 1] - Derivat.dizelR3[index]);
+                        double test2 = test / 10 * decimall + Derivat.dizelR3[index];
                         prEudOut2.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -940,7 +940,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prEud2.Text);
                     try
                     {
-                        prEudOut2.Text = Derivati.dizelR3[i].ToString();
+                        prEudOut2.Text = Derivat.dizelR3[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -975,7 +975,7 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefEud2.Text = Derivati.korekcijaEud(tempEud2.Text).ToString();
+                    koefEud2.Text = Derivat.korekcijaEud(tempEud2.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -1010,7 +1010,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaEud2.Text = Derivati.litToNiv(Derivati.dizelR3, prEudOut2.Text, litSipkaEud2.Text) + "(cm)".ToString();
+                sipkaEud2.Text = Derivat.litToNiv(Derivat.dizelR3, prEudOut2.Text, litSipkaEud2.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -1040,8 +1040,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prGold.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.eudGold[index + 1] - Derivati.eudGold[index]);
-                        double test2 = test / 10 * decimall + Derivati.eudGold[index];
+                        double test = (Derivat.eudGold[index + 1] - Derivat.eudGold[index]);
+                        double test2 = test / 10 * decimall + Derivat.eudGold[index];
                         prGoldOut.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -1055,7 +1055,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prGold.Text);
                     try
                     {
-                        prGoldOut.Text = Derivati.eudGold[i].ToString();
+                        prGoldOut.Text = Derivat.eudGold[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -1084,7 +1084,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefGold.Text = Derivati.korekcijaEud(tempGold.Text).ToString();
+                    koefGold.Text = Derivat.korekcijaEud(tempGold.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -1105,7 +1105,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaGold.Text = Derivati.litToNiv(Derivati.eudGold, prGoldOut.Text, litSipkaGold.Text) + "(cm)".ToString();
+                sipkaGold.Text = Derivat.litToNiv(Derivat.eudGold, prGoldOut.Text, litSipkaGold.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -1153,8 +1153,8 @@ namespace InfoReaderV2
                         double inp = Double.Parse(prGasnoUlje.Text.Replace(",", "."));
                         double decimall = (inp - Math.Truncate(inp)) * 10;
                         int index = (int)Math.Truncate(inp);
-                        double test = (Derivati.gasnoUlje[index + 1] - Derivati.gasnoUlje[index]);
-                        double test2 = test / 10 * decimall + Derivati.gasnoUlje[index];
+                        double test = (Derivat.gasnoUlje[index + 1] - Derivat.gasnoUlje[index]);
+                        double test2 = test / 10 * decimall + Derivat.gasnoUlje[index];
                         prGasnoUljeOut.Text = test2.ToString();
                     }
                     catch (IndexOutOfRangeException)
@@ -1168,7 +1168,7 @@ namespace InfoReaderV2
                     int i = Int32.Parse(prGasnoUlje.Text);
                     try
                     {
-                        prGasnoUljeOut.Text = Derivati.gasnoUlje[i].ToString();
+                        prGasnoUljeOut.Text = Derivat.gasnoUlje[i].ToString();
                     }
                     catch (IndexOutOfRangeException)
                     {
@@ -1204,7 +1204,7 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefGasnoUlje.Text = Derivati.korekcijaEud(tempGasnoUlje.Text).ToString();
+                    koefGasnoUlje.Text = Derivat.korekcijaEud(tempGasnoUlje.Text).ToString();
                 }
                 catch (KeyNotFoundException)
                 {
@@ -1238,7 +1238,7 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaGasnoUlje.Text = Derivati.litToNiv(Derivati.gasnoUlje, prGasnoUljeOut.Text, litSipkaGasnoUlje.Text) + "(cm)".ToString();
+                sipkaGasnoUlje.Text = Derivat.litToNiv(Derivat.gasnoUlje, prGasnoUljeOut.Text, litSipkaGasnoUlje.Text) + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -1356,7 +1356,7 @@ namespace InfoReaderV2
 
                     try
                     {
-                        koefVolumetar.Text = Derivati.korekcijaBmb(tempVolumetar.Text).ToString();
+                        koefVolumetar.Text = Derivat.korekcijaBmb(tempVolumetar.Text).ToString();
                     }
                     catch (KeyNotFoundException)
                     {
@@ -1373,7 +1373,7 @@ namespace InfoReaderV2
                 {
                     try
                     {
-                        koefVolumetar.Text = Derivati.korekcijaEud(tempVolumetar.Text).ToString();
+                        koefVolumetar.Text = Derivat.korekcijaEud(tempVolumetar.Text).ToString();
                     }
                     catch (KeyNotFoundException)
                     {
@@ -1515,14 +1515,14 @@ namespace InfoReaderV2
             }
 
 
-            Derivati.litBmb98 = GetArray(bmb98);
-            Derivati.litBmb95 = GetArray(bmb95);
-            Derivati.litBmb95R2 = GetArray(bmb95R2);
-            Derivati.dizel = GetArray(eud);
-            Derivati.dizelR2 = GetArray(eudR2);
-            Derivati.dizelR3 = GetArray(eudR3);
-            Derivati.eudGold = GetArray(eudGold);
-            Derivati.gasnoUlje = GetArray(gasnoUlje);
+            Derivat.litBmb98 = GetArray(bmb98);
+            Derivat.litBmb95 = GetArray(bmb95);
+            Derivat.litBmb95R2 = GetArray(bmb95R2);
+            Derivat.dizel = GetArray(eud);
+            Derivat.dizelR2 = GetArray(eudR2);
+            Derivat.dizelR3 = GetArray(eudR3);
+            Derivat.eudGold = GetArray(eudGold);
+            Derivat.gasnoUlje = GetArray(gasnoUlje);
 
 
 

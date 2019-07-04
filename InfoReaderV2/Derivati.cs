@@ -5,7 +5,7 @@ using System.Text;
 
 namespace InfoReaderV2
 {
-    class Derivati
+    class Derivat
     {
 
         public static int[] dizel;
