@@ -109,3 +109,22 @@ C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Debug\Kalkulato
 C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Debug\KalkulatorDizajn.csprojAssemblyReference.cache
 C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Debug\KalkulatorDizajn.csproj.CoreCompileInputs.cache
 C:\Users\OGI-PC\Desktop\KalkulatorPlimorfni\InfoReaderV2\obj\x86\Debug\KalkulatorDizajn.csprojResolveAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\bin\Debug\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\bin\Debug\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\bin\Debug\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\bin\Debug\Kalkulator Zapremine.pdb
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\KalkulatorDizajn.csprojAssemblyReference.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\MainWindow.baml
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\App.baml
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\MainWindow.g.cs
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\App.g.cs
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine_MarkupCompile.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine.g.resources
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\InfoReaderV2.Properties.Resources.resources
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\KalkulatorDizajn.csproj.GenerateResource.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\KalkulatorDizajn.csproj.CoreCompileInputs.cache
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine.TrustInfo.xml
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine.exe.manifest
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine.application
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine.exe
+C:\Users\OGI-PC\Desktop\git-version-folder\FuelCalculator\InfoReaderV2\obj\x86\Debug\Kalkulator Zapremine.pdb

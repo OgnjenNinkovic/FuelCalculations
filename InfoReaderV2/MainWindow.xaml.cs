@@ -86,7 +86,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    txtInBmb95.Text = der.Nivo;
+                    outBmb95.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -112,7 +112,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    tempBmb95R2.Text = der.Nivo;
+                   outBmb95R2.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -136,7 +136,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    txtInBmb98.Text = der.Nivo;
+                    outBmb98.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -152,6 +152,8 @@ namespace InfoReaderV2
         }
         private void txtInDizel_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.Dizel);
+            der.Nivo = txtInDizel.Text;
             if (e.Key == Key.Enter)
             {
                 if (txtInDizel.Text == "")
@@ -160,7 +162,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.eud,false);
+                   outDizel.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -175,6 +177,8 @@ namespace InfoReaderV2
         }
         private void txtInDizel1_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR2);
+            der.Nivo = txtInDizel1.Text;
             TextBox box = (TextBox)sender;
             box.MaxLength = 5;
 
@@ -186,7 +190,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.eud1,false);
+                   outDizel1.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -201,7 +205,8 @@ namespace InfoReaderV2
         }
         private void txtInDizel2_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR3);
+            der.Nivo = txtInDizel2.Text;
             TextBox box = (TextBox)sender;
             box.MaxLength = 5;
 
@@ -213,7 +218,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.eud2,false);
+                    outDizel2.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -229,6 +234,8 @@ namespace InfoReaderV2
         }
         private void txtInGold_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.EudGold);
+            der.Nivo = txtInGold.Text;
             TextBox box = (TextBox)sender;
             box.MaxLength = 5;
 
@@ -240,7 +247,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.eudGold,false);
+                    outGold.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -255,6 +262,9 @@ namespace InfoReaderV2
 
         private void txtInGasnoUlje_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.GasnoUlje);
+            der.Nivo = txtInGasnoUlje.Text;
+
             TextBox box = (TextBox)sender;
             box.MaxLength = 5;
 
@@ -266,7 +276,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.gasnoUlje,false);
+                    outGasnoUlje.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -431,7 +441,6 @@ namespace InfoReaderV2
 
                 }
 
-                CalculatorZapremine(prBmb95, Derivat.litBmb95, prBmb95out);
                 //double max = Double.Parse(max95.Text);
                 //double d = max - double.Parse(prBmb95out.Text);
                 //raspolozivoBmb95.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());

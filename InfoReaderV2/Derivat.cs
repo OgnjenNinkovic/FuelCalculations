@@ -64,7 +64,7 @@ namespace InfoReaderV2
         }
 
 
-        private double korekcija;
+       // private double korekcija;
         private string nivo;
         public string Nivo { get
             {
