@@ -18,6 +18,80 @@ namespace InfoReaderV2
         public static int[] gasnoUlje;
 
 
+        public int[] TabelaZapremine;
+
+
+
+       public enum NazivDerivata { Dizel,DizelR2,DizelR3,LitBmb95, LitBmb95R2,LitBmb98,EudGold,GasnoUlje };
+
+       public NazivDerivata nazivDerivata { get; set; }
+
+
+        public Derivat(NazivDerivata der)
+        {
+            this.nazivDerivata = der;
+
+
+            switch (nazivDerivata)
+            {
+                case NazivDerivata.Dizel:
+                    TabelaZapremine = dizel;
+                    break;
+                case NazivDerivata.DizelR2:
+                    TabelaZapremine = dizelR2;
+                    break;
+                case NazivDerivata.DizelR3:
+                    TabelaZapremine = dizelR3;
+                    break;
+                case NazivDerivata.LitBmb95:
+                    TabelaZapremine = litBmb95;
+                    break;
+                case NazivDerivata.LitBmb95R2:
+                    TabelaZapremine = litBmb95R2;
+                    break;
+                case NazivDerivata.LitBmb98:
+                    TabelaZapremine = litBmb98;
+                    break;
+                case NazivDerivata.EudGold:
+                    TabelaZapremine = eudGold;
+                    break;
+                case NazivDerivata.GasnoUlje:
+                    TabelaZapremine = gasnoUlje;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+        private double korekcija;
+        private string nivo;
+        public string Nivo { get
+            {
+                if (nivo.Contains(",") || nivo.Contains("."))
+                {
+                    double inp = Double.Parse(nivo.Replace(",", "."));
+                    double decimall = (inp - Math.Truncate(inp)) * 10;
+                    int index = (int)Math.Truncate(inp);
+                    double test = (TabelaZapremine[index + 1] - TabelaZapremine[index]);
+                    double test2 = test / 10 * decimall + TabelaZapremine[index];
+
+                    return Math.Round(test2).ToString();
+                }
+                else
+                {
+                    int i = Int32.Parse(nivo);
+
+                    return TabelaZapremine[i].ToString();
+
+                };
+            }
+
+            set { nivo = value; } }
+
+
+
+
         public static double korekcijaBmb(string temp)
         {
             int tem = int.Parse(temp);

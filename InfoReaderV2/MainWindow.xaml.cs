@@ -23,16 +23,13 @@ namespace InfoReaderV2
     /// </summary>
     public partial class MainWindow : Window
     {
+      
 
 
 
-
-        enum Der { bmb95, bmb95R2, bmb98, eud, eud1, eud2, eudGold, gasnoUlje };
         public MainWindow()
         {
             InitializeComponent();
-
-
         }
 
 
@@ -68,77 +65,19 @@ namespace InfoReaderV2
             e.Handled = !IsTextAllowedTemp(e.Text);
 
         }
-        public void CalculatorZapremine(TextBox textBox, int[] tabela, TextBlock result)
-        {
-
-            if (textBox.Text.Contains(",") || textBox.Text.Contains("."))
-            {
-                double inp = Double.Parse(textBox.Text.Replace(",", "."));
-                double decimall = (inp - Math.Truncate(inp)) * 10;
-                int index = (int)Math.Truncate(inp);
-                double test = (tabela[index + 1] - tabela[index]);
-                double test2 = test / 10 * decimall + tabela[index];
-
-                result.Text = Math.Round(test2).ToString() + " lit";
-            }
-            else
-            {
-                int i = Int32.Parse(textBox.Text);
-
-                result.Text = tabela[i].ToString() + " lit";
-
-            }
-        }
-
-
-
-
-
       
 
-        private void Kalkulacija(Der goriva,bool prijem)
-        {
-
-
-            switch (goriva)
-            {
-
-                case Der.bmb95:
-                              
-                                  
-                        CalculatorZapremine(txtInBmb95, Derivat.litBmb95, outBmb95);
-         
-                    break;
-                case Der.bmb95R2:
-                    CalculatorZapremine(txtInBmb95R2, Derivat.litBmb95R2, outBmb95R2);
-                    break;
-                case Der.bmb98:
-                    CalculatorZapremine(txtInBmb98, Derivat.litBmb98, outBmb98);
-                    break;
-                case Der.eud:
-                    CalculatorZapremine(txtInDizel, Derivat.dizel, outDizel);
-                    break;
-                case Der.eud1:
-                    CalculatorZapremine(txtInDizel1, Derivat.dizelR2, outDizel1);
-                    break;
-                case Der.eud2:
-                    CalculatorZapremine(txtInDizel2, Derivat.dizelR3, outDizel2);
-                    break;
-                case Der.eudGold:
-                    CalculatorZapremine(txtInGold, Derivat.eudGold, outGold);
-                    break;
-                case Der.gasnoUlje:
-                    CalculatorZapremine(txtInGasnoUlje, Derivat.gasnoUlje, outGasnoUlje);
-                    break;
-
-            }
-        }
+    
+      
 
 
 
 
         private void txtInBmb95_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95);
+            der.Nivo = txtInBmb95.Text;
+
             if (e.Key == Key.Enter)
             {
                 if (txtInBmb95.Text == "")
@@ -147,7 +86,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.bmb95,false);
+                    txtInBmb95.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -163,7 +102,8 @@ namespace InfoReaderV2
         }
         private void txtInBmb95R2_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95R2);
+            der.Nivo = tempBmb95R2.Text;
             if (e.Key == Key.Enter)
             {
                 if (txtInBmb95R2.Text == "")
@@ -172,7 +112,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.bmb95R2,false);
+                    tempBmb95R2.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -186,7 +126,8 @@ namespace InfoReaderV2
         }
         private void txtInBmb98_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb98);
+            der.Nivo = txtInBmb98.Text;
             if (e.Key == Key.Enter)
             {
                 if (txtInBmb98.Text == "")
@@ -195,7 +136,7 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    Kalkulacija(Der.bmb98,false);
+                    txtInBmb98.Text = der.Nivo;
                 }
                 catch (IndexOutOfRangeException)
                 {
