@@ -2358,7 +2358,7 @@
                Foreground="#FF0F00FF"
                MouseLeftButtonDown="textBlock_MouseLeftButtonDown"
                Height="16"
-               Width="33" />
+               Width="40" />
 
     </Grid>
 </Window>

@@ -975,6 +975,7 @@ namespace InfoReaderV2
         #region PrijemGOLD
         private void prGold_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.EudGold);
 
 
             if (e.Key == Key.Enter)
@@ -983,36 +984,8 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                if (prGold.Text.Contains(",") || prGold.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prGold.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.eudGold[index + 1] - Derivat.eudGold[index]);
-                        double test2 = test / 10 * decimall + Derivat.eudGold[index];
-                        prGoldOut.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
-                else
-                {
-                    int i = Int32.Parse(prGold.Text);
-                    try
-                    {
-                        prGoldOut.Text = Derivat.eudGold[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prGold.Text;
+                prGoldOut.Text = der.Nivo;              
                 double max = Double.Parse(maxGold.Text);
                 double d = max - double.Parse(prGoldOut.Text);
                 raspolozivoGold.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
@@ -1025,6 +998,7 @@ namespace InfoReaderV2
         }
         private void tempGold_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.EudGold);
 
             if (e.Key == Key.Enter)
             {
@@ -1034,7 +1008,8 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefGold.Text = Derivat.korekcijaEud(tempGold.Text).ToString();
+                    der.Temperatura = tempGold.Text;
+                    koefGold.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -1048,14 +1023,17 @@ namespace InfoReaderV2
         }
         private void TextBox_KeyDownGold(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.EudGold);
             if (e.Key == Key.Enter)
             {
+
                 if (litSipkaGold.Text == "")
                 {
                     return;
                 }
-                sipkaGold.Text = Derivat.litToNiv(Derivat.eudGold, prGoldOut.Text, litSipkaGold.Text) + "(cm)".ToString();
+                der.Nivo = prGoldOut.Text;
+                der.KolicinaPoOtpremnici = litSipkaGold.Text;
+                sipkaGold.Text = der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);

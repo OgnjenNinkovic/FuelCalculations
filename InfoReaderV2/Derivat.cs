@@ -26,6 +26,7 @@ namespace InfoReaderV2
 
        public NazivDerivata nazivDerivata { get; set; }
 
+        private static bool benzin;
 
         public Derivat(NazivDerivata der)
         {
@@ -36,35 +37,42 @@ namespace InfoReaderV2
             {
                 case NazivDerivata.Dizel:
                     TabelaZapremine = dizel;
+                    benzin = false;
                     break;
                 case NazivDerivata.DizelR2:
                     TabelaZapremine = dizelR2;
+                    benzin = false;
                     break;
                 case NazivDerivata.DizelR3:
                     TabelaZapremine = dizelR3;
+                    benzin = false;
                     break;
                 case NazivDerivata.LitBmb95:
                     TabelaZapremine = litBmb95;
+                    benzin = true;
                     break;
                 case NazivDerivata.LitBmb95R2:
                     TabelaZapremine = litBmb95R2;
+                    benzin = true;
                     break;
                 case NazivDerivata.LitBmb98:
                     TabelaZapremine = litBmb98;
+                    benzin = true;
                     break;
                 case NazivDerivata.EudGold:
                     TabelaZapremine = eudGold;
+                    benzin = false;
                     break;
                 case NazivDerivata.GasnoUlje:
                     TabelaZapremine = gasnoUlje;
+                    benzin = false;
                     break;
                 default:
                     break;
             }
         }
 
-
-       // private double korekcija;
+        //izracunati litrazu iz zadatog nivoa
         private string nivo;
         public string Nivo { get
             {
@@ -88,8 +96,36 @@ namespace InfoReaderV2
             }
 
             set { nivo = value; } }
+        
 
 
+
+       //vratiti koeficjent za izracunavanje korekcije na osnovu temperature
+       private string temperatura;      
+
+        public string Temperatura
+        {
+            get
+            {
+                if(temperatura != string.Empty)
+                {
+                    if (Derivat.benzin)
+                    {
+                      return  korekcijaBmb(temperatura).ToString();
+
+                    }
+                    return korekcijaEud(temperatura).ToString();
+                }
+                return "nije unesena temperatura";
+            }
+
+            set
+            {
+                temperatura = value;
+            }
+
+        }
+          
 
 
         public static double korekcijaBmb(string temp)
@@ -217,10 +253,35 @@ namespace InfoReaderV2
         }
 
 
-        public static int litToNiv(int[] litraza, string litrza, string litPre)
+
+
+
+        //izracunati zavrsni nivo u centimetrima
+        private string kolicinaPoOtpremnici;
+        public string KolicinaPoOtpremnici
         {
-            double str1 = double.Parse(litrza);
-            double str2 = double.Parse(litPre);
+            get
+            {
+                if (kolicinaPoOtpremnici !=null)
+                {
+                    return litToNiv(TabelaZapremine, nivo, kolicinaPoOtpremnici).ToString();
+
+                }
+                return "";
+
+            }
+            set
+            {
+                this.kolicinaPoOtpremnici = value;
+            }
+        }
+
+
+
+        public static int litToNiv(int[] litraza, string izracunataLitraza, string kolicinaPoOtprmnici)
+        {
+            double str1 = double.Parse(izracunataLitraza);
+            double str2 = double.Parse(kolicinaPoOtprmnici);
             double s = str1 + str2;
             int lit = (int)s;
             var niv = new List<int>();
