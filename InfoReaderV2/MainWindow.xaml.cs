@@ -297,42 +297,15 @@ namespace InfoReaderV2
 
         private void prBmb98_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb98);
             if (e.Key == Key.Enter)
             {
                 if (prBmb98.Text == "")
                 {
                     return;
                 }
-                if (prBmb98.Text.Contains(",") || prBmb98.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prBmb98.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.litBmb98[index + 1] - Derivat.litBmb98[index]);
-                        double test2 = test / 10 * decimall + Derivat.litBmb98[index];
-                        prBmb98out.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
-                else
-                {
-                    int i = Int32.Parse(prBmb98.Text);
-                    try
-                    {
-                        prBmb98out.Text = Derivat.litBmb98[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prBmb98.Text;                
+                prBmb98out.Text = der.Nivo;              
                 double max = Double.Parse(max98.Text);
                 double d = max - double.Parse(prBmb98out.Text);
                 raspolozivo.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d));
@@ -346,6 +319,8 @@ namespace InfoReaderV2
 
         private void tempBmb98_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb98);
+
             if (e.Key == Key.Enter)
             {
                 if (tempBmb98.Text == "")
@@ -354,7 +329,8 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefBmb98.Text = Derivat.korekcijaBmb(tempBmb98.Text).ToString();
+                    der.Temperatura = tempBmb98.Text;
+                    koefBmb98.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -371,13 +347,17 @@ namespace InfoReaderV2
 
         private void TextBox_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb98);
+
             if (e.Key == Key.Enter)
             {
                 if (litSipka.Text == "")
                 {
                     return;
                 }
-                sipka.Text = Derivat.litToNiv(Derivat.litBmb98, prBmb98out.Text, litSipka.Text) + "(cm)".ToString();
+                der.Nivo = prBmb98out.Text;
+                der.KolicinaPoOtpremnici = litSipka.Text;
+                sipka.Text =der.KolicinaPoOtpremnici +"(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -404,46 +384,18 @@ namespace InfoReaderV2
 
         private void prBmb95_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95);
             if (e.Key == Key.Enter)
             {
                 if (prBmb95.Text == "")
                 {
                     return;
                 }
-                if (prBmb95.Text.Contains(",") || prBmb95.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prBmb95.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.litBmb95[index + 1] - Derivat.litBmb95[index]);
-                        double test2 = test / 10 * decimall + Derivat.litBmb95[index];
-                        prBmb95out.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
-                else
-                {
-                    int i = Int32.Parse(prBmb95.Text);
-                    try
-                    {
-                        prBmb95out.Text = Derivat.litBmb95[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
-
-                //double max = Double.Parse(max95.Text);
-                //double d = max - double.Parse(prBmb95out.Text);
-                //raspolozivoBmb95.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
+                der.Nivo = prBmb95.Text;
+                prBmb95out.Text = der.Nivo;
+                double max = Double.Parse(max95.Text);
+                double d = max - double.Parse(prBmb95out.Text);
+                raspolozivoBmb95.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -454,6 +406,8 @@ namespace InfoReaderV2
 
         private void tempBmb95_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95);
+
             if (e.Key == Key.Enter)
             {
                 if (tempBmb95.Text == "")
@@ -462,7 +416,8 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefBmb95.Text = Derivat.korekcijaBmb(tempBmb95.Text).ToString();
+                    der.Temperatura = tempBmb95.Text;
+                    koefBmb95.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -478,6 +433,7 @@ namespace InfoReaderV2
 
         private void TextBox_KeyDownBmb95(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95);
 
             if (e.Key == Key.Enter)
             {
@@ -485,7 +441,9 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaBmb95.Text = Derivat.litToNiv(Derivat.litBmb95, prBmb95out.Text, litSipkaBmb95.Text) + "(cm)".ToString();
+                der.Nivo = prBmb95out.Text;
+                der.KolicinaPoOtpremnici = litSipkaBmb95.Text;
+                sipkaBmb95.Text = der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -512,43 +470,15 @@ namespace InfoReaderV2
 
         private void prBmb95R2_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95R2);
             if (e.Key == Key.Enter)
             {
                 if (prBmb95R2.Text == "")
                 {
                     return;
                 }
-                if (prBmb95R2.Text.Contains(",") || prBmb95R2.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prBmb95R2.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.litBmb95R2[index + 1] - Derivat.litBmb95R2[index]);
-                        double test2 = test / 10 * decimall + Derivat.litBmb95R2[index];
-                        prBmb95outR2.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
-                else
-                {
-                    int i = Int32.Parse(prBmb95R2.Text);
-                    try
-                    {
-                        prBmb95outR2.Text = Derivat.litBmb95R2[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prBmb95outR2.Text;
+                prBmb95outR2.Text = der.Nivo;
                 double max = Double.Parse(max95R2.Text);
                 double d = max - double.Parse(prBmb95outR2.Text);
                 raspolozivoBmb95R2.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
@@ -563,6 +493,8 @@ namespace InfoReaderV2
 
         private void tempBmb95R2_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95R2);
+
 
             if (e.Key == Key.Enter)
             {
@@ -572,7 +504,8 @@ namespace InfoReaderV2
                 }
                 try
                 {
-                    koefBmb95R2.Text = Derivat.korekcijaBmb(tempBmb95R2.Text).ToString();
+                    der.Temperatura = tempBmb95R2.Text;
+                    koefBmb95R2.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -589,6 +522,8 @@ namespace InfoReaderV2
 
         private void TextBox_KeyDownBmb95R2(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.LitBmb95R2);
+
 
             if (e.Key == Key.Enter)
             {
@@ -596,7 +531,9 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaBmb95R2.Text = Derivat.litToNiv(Derivat.litBmb95R2, prBmb95outR2.Text, litSipkaBmb95R2.Text) + "(cm)".ToString();
+                der.Nivo = prBmb95outR2.Text;
+                der.KolicinaPoOtpremnici = litSipkaBmb95R2.Text;
+                sipkaBmb95R2.Text = der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -628,43 +565,15 @@ namespace InfoReaderV2
 
         private void prEud_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.Dizel);
             if (e.Key == Key.Enter)
             {
                 if (prEud.Text == "")
                 {
                     return;
                 }
-                if (prEud.Text.Contains(",") || prEud.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prEud.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.dizel[index + 1] - Derivat.dizel[index]);
-                        double test2 = test / 10 * decimall + Derivat.dizel[index];
-                        prEudOut.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
-                else
-                {
-                    int i = Int32.Parse(prEud.Text);
-                    try
-                    {
-                        prEudOut.Text = Derivat.dizel[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prEud.Text;
+                prEudOut.Text = der.Nivo;               
                 double max = Double.Parse(maxEud.Text);
                 double d = max - double.Parse(prEudOut.Text);
                 raspolozivoEud.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
@@ -680,6 +589,7 @@ namespace InfoReaderV2
 
         private void tempEud_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.Dizel);
 
             if (e.Key == Key.Enter)
             {
@@ -690,7 +600,8 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefEud.Text = Derivat.korekcijaEud(tempEud.Text).ToString();
+                    der.Temperatura = tempEud.Text;
+                    koefEud.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -706,13 +617,17 @@ namespace InfoReaderV2
 
         private void TextBox_KeyDownEud(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.Dizel);
+
             if (e.Key == Key.Enter)
             {
                 if (litSipkaEud.Text == "")
                 {
                     return;
                 }
-                sipkaEud.Text = Derivat.litToNiv(Derivat.dizel, prEudOut.Text, litSipkaEud.Text) + "(cm)".ToString();
+                der.Nivo = prEudOut.Text;
+                der.KolicinaPoOtpremnici = litSipkaEud.Text;
+                sipkaEud.Text =der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
