@@ -656,7 +656,7 @@ namespace InfoReaderV2
         #region PrijemEUD2
         private void prEud1_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR2);
 
             if (e.Key == Key.Enter)
             {
@@ -664,47 +664,15 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                if (prEud1.Text.Contains(",") || prEud1.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prEud1.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.dizelR2[index + 1] - Derivat.dizelR2[index]);
-                        double test2 = test / 10 * decimall + Derivat.dizelR2[index];
-                        prEudOut1.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
 
-                }
-                else
-                {
-                    int i = Int32.Parse(prEud1.Text);
-                    try
-                    {
-                        prEudOut1.Text = Derivat.dizelR2[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prEud1.Text;
+                prEudOut1.Text = der.Nivo;
                 double max = Double.Parse(maxEud1.Text);
                 double d = max - double.Parse(prEudOut1.Text);
                 raspolozivoEud1.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
-
-
-
-
-
             }
 
 
@@ -714,6 +682,7 @@ namespace InfoReaderV2
 
         private void tempEud1_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR2);
 
             if (e.Key == Key.Enter)
             {
@@ -724,7 +693,8 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefEud1.Text = Derivat.korekcijaEud(tempEud1.Text).ToString();
+                    der.Temperatura = tempEud1.Text;
+                    koefEud1.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -751,13 +721,18 @@ namespace InfoReaderV2
 
         private void TextBox_KeyDownEud1(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR2);
+
             if (e.Key == Key.Enter)
             {
                 if (litSipkaEud1.Text == "")
                 {
                     return;
                 }
-                sipkaEud1.Text = Derivat.litToNiv(Derivat.dizelR2, prEudOut1.Text, litSipkaEud1.Text) + "(cm)".ToString();
+
+                der.Nivo = prEudOut1.Text;
+                der.KolicinaPoOtpremnici = litSipkaEud1.Text;
+                sipkaEud1.Text = der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -777,42 +752,16 @@ namespace InfoReaderV2
         #region prijemEUD3
         private void prEud2_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR3);
             if (e.Key == Key.Enter)
             {
                 if (prEud2.Text == "")
                 {
                     return;
                 }
-                if (prEud2.Text.Contains(",") || prEud2.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prEud2.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.dizelR3[index + 1] - Derivat.dizelR3[index]);
-                        double test2 = test / 10 * decimall + Derivat.dizelR3[index];
-                        prEudOut2.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
 
-                }
-                else
-                {
-                    int i = Int32.Parse(prEud2.Text);
-                    try
-                    {
-                        prEudOut2.Text = Derivat.dizelR3[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prEud2.Text;
+                prEud1.Text = der.Nivo;
                 double max = Double.Parse(maxEud2.Text);
                 double d = max - double.Parse(prEudOut2.Text);
                 raspolozivoEud2.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
@@ -830,6 +779,7 @@ namespace InfoReaderV2
 
         private void tempEud2_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR3);
 
             if (e.Key == Key.Enter)
             {
@@ -840,7 +790,8 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefEud2.Text = Derivat.korekcijaEud(tempEud2.Text).ToString();
+                    der.Temperatura = tempEud2.Text;
+                    koefEud2.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -869,13 +820,18 @@ namespace InfoReaderV2
 
         private void TextBox_KeyDownEud2(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.DizelR3);
+
             if (e.Key == Key.Enter)
             {
                 if (litSipkaEud2.Text == "")
                 {
                     return;
                 }
-                sipkaEud2.Text = Derivat.litToNiv(Derivat.dizelR3, prEudOut2.Text, litSipkaEud2.Text) + "(cm)".ToString();
+
+                der.Nivo = prEud2.Text;
+                der.KolicinaPoOtpremnici = litSipkaEud2.Text;
+                sipkaEud2.Text = der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
@@ -981,7 +937,7 @@ namespace InfoReaderV2
         #region GasnoUlje
         private void prGasnoUlje_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Derivat der = new Derivat(Derivat.NazivDerivata.GasnoUlje);
 
             if (e.Key == Key.Enter)
             {
@@ -989,36 +945,9 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                if (prGasnoUlje.Text.Contains(",") || prGasnoUlje.Text.Contains("."))
-                {
-                    try
-                    {
-                        double inp = Double.Parse(prGasnoUlje.Text.Replace(",", "."));
-                        double decimall = (inp - Math.Truncate(inp)) * 10;
-                        int index = (int)Math.Truncate(inp);
-                        double test = (Derivat.gasnoUlje[index + 1] - Derivat.gasnoUlje[index]);
-                        double test2 = test / 10 * decimall + Derivat.gasnoUlje[index];
-                        prGasnoUljeOut.Text = test2.ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
 
-                }
-                else
-                {
-                    int i = Int32.Parse(prGasnoUlje.Text);
-                    try
-                    {
-                        prGasnoUljeOut.Text = Derivat.gasnoUlje[i].ToString();
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        MessageBox.Show("Litraža prevazilazi maksimalnu zapreminu");
-                    }
-
-                }
+                der.Nivo = prGasnoUlje.Text;
+                prGasnoUljeOut.Text = der.Nivo;
                 double max = Double.Parse(maxGasnoUlje.Text);
                 double d = max - double.Parse(prGasnoUlje.Text);
                 raspolozivoGasnoUlje.Text = string.Format("DOSTUPNO {0} lit", Math.Round(d).ToString());
@@ -1038,6 +967,8 @@ namespace InfoReaderV2
         }
         private void tempGasnoUlje_KeyDown(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.GasnoUlje);
+
             if (e.Key == Key.Enter)
             {
                 if (tempGasnoUlje.Text == "")
@@ -1047,7 +978,8 @@ namespace InfoReaderV2
 
                 try
                 {
-                    koefGasnoUlje.Text = Derivat.korekcijaEud(tempGasnoUlje.Text).ToString();
+                    der.Temperatura = tempGasnoUlje.Text;
+                    koefGasnoUlje.Text = der.Temperatura;
                 }
                 catch (KeyNotFoundException)
                 {
@@ -1074,6 +1006,7 @@ namespace InfoReaderV2
 
         private void TextBox_litSipkaGasnoUlje(object sender, KeyEventArgs e)
         {
+            Derivat der = new Derivat(Derivat.NazivDerivata.GasnoUlje);
 
             if (e.Key == Key.Enter)
             {
@@ -1081,7 +1014,10 @@ namespace InfoReaderV2
                 {
                     return;
                 }
-                sipkaGasnoUlje.Text = Derivat.litToNiv(Derivat.gasnoUlje, prGasnoUljeOut.Text, litSipkaGasnoUlje.Text) + "(cm)".ToString();
+
+                der.Nivo = prGasnoUlje.Text;
+                der.KolicinaPoOtpremnici = litSipkaGasnoUlje.Text;
+                sipkaGasnoUlje.Text = der.KolicinaPoOtpremnici + "(cm)".ToString();
                 TraversalRequest request = new TraversalRequest(FocusNavigationDirection.Next);
                 request.Wrapped = true;
                 ((TextBox)sender).MoveFocus(request);
