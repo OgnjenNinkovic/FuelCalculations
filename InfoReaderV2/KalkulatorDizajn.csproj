@@ -170,10 +170,10 @@
     <Resource Include="Guillendesign-Variations-1-Calculator-2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <SplashScreen Include="SplashScreen1.png" />
+    <Resource Include="Lajsna.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Lajsna.png" />
+    <SplashScreen Include="logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

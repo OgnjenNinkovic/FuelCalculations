@@ -73,7 +73,7 @@ namespace InfoReaderV2 {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
-            SplashScreen splashScreen = new SplashScreen("splashscreen1.png");
+            SplashScreen splashScreen = new SplashScreen("logo.png");
             splashScreen.Show(true);
             InfoReaderV2.App app = new InfoReaderV2.App();
             app.InitializeComponent();
