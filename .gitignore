@@ -6,6 +6,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.vs/KalcDizajn/v15/.suo
+*.vs/KalcDizajn/v15/Server/sqlite3/storage.ide-shm
+*.vs/KalcDizajn/v15/Server/sqlite3/storage.ide-wal
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -13,6 +16,11 @@
 *.vs/KalcDizajn/v15/Server/sqlite3/storage.ide-shm
 InfoReaderV2/obj/x86/Debug/Kalkulator Zapremine_MarkupCompile.cache
 InfoReaderV2/obj/x86/Debug/KalkulatorDizajn.csproj.CoreCompileInputs.cache
+
+
+
+
+
 
 # Build results
 [Dd]ebug/
