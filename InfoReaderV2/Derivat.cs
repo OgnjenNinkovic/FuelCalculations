@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace InfoReaderV2
 {
     class Derivat
     {
-
+        CultureInfo culture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
         public static int[] dizel;
         public static int[] dizelR2;
         public static int[] dizelR3;
@@ -76,6 +78,8 @@ namespace InfoReaderV2
         private string nivo;
         public string Nivo { get
             {
+                culture.NumberFormat.NumberDecimalSeparator = ".";
+                Thread.CurrentThread.CurrentCulture = culture;
                 if (nivo.Contains(",") || nivo.Contains("."))
                 {
                     double inp = Double.Parse(nivo.Replace(",", "."));
