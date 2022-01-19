@@ -2,7 +2,7 @@
 
 ![Sass Essential Training](Capture.PNG)
 
-the program is designed to facilitate fuel volume calculations when measuring its level in tanks.
+The program is designed to facilitate fuel volume calculations when measuring its level in tanks.
 The program also automates the calculation of the correction for temperature changes.
 
 ## Instructions
